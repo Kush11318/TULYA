@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: "Compare prices across Amazon and Flipkart",
 };
 
+import { AlertProvider } from '@/components/providers/AlertProvider';
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -13,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="light">
-      <body className="bg-white text-black dark:bg-black dark:text-white">{children}</body>
+      <body className="bg-white text-black dark:bg-black dark:text-white">
+        <AlertProvider>{children}</AlertProvider>
+      </body>
     </html>
   );
 }

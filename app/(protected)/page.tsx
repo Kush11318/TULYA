@@ -2,10 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import SearchBar from './components/SearchBar';
-import History from './components/History';
-import DarkModeToggle from './components/DarkModeToggle';
-import { addSearchToHistory } from './components/History';
+import SearchBar from '@/app/components/SearchBar';
+import History from '@/app/components/History';
+import DarkModeToggle from '@/app/components/DarkModeToggle';
+import { addSearchToHistory } from '@/app/components/History';
 
 export default function Home() {
   const router = useRouter();
